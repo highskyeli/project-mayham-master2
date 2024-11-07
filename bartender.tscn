@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://di1ixs1qginkv"]
+
+[ext_resource type="Texture2D" uid="uid://bll142wjcfows" path="res://bartender.png" id="1_448w5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0mhj"]
+size = Vector2(174, 238)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Bartender" type="Sprite2D" parent="."]
+texture = ExtResource("1_448w5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -25)
+shape = SubResource("RectangleShape2D_n0mhj")

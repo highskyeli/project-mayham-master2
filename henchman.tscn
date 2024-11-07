@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbinhl6re7wkq"]
+
+[ext_resource type="Texture2D" uid="uid://50sx3540vdhw" path="res://projectymayham/henchman.png" id="1_522ea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_234hm"]
+size = Vector2(78, 141)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Henchman" type="Sprite2D" parent="."]
+texture = ExtResource("1_522ea")
+hframes = 2
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 29.5)
+shape = SubResource("RectangleShape2D_234hm")

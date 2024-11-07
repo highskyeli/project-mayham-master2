@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce0gbjxn3lxg3"]
+
+[ext_resource type="Texture2D" uid="uid://i3cokl032l4d" path="res://demon.png" id="1_44frp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qcm1"]
+size = Vector2(143, 140)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="demon" type="Sprite2D" parent="."]
+texture = ExtResource("1_44frp")
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.5, 5)
+shape = SubResource("RectangleShape2D_4qcm1")

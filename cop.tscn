@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4cc0qgsvh1nj"]
+
+[ext_resource type="Texture2D" uid="uid://be7ptmjy5cjgs" path="res://projectymayham/cop.png" id="1_nojfv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p152"]
+size = Vector2(75, 142)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Cop" type="Sprite2D" parent="."]
+texture = ExtResource("1_nojfv")
+hframes = 2
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.5, 30)
+shape = SubResource("RectangleShape2D_7p152")
